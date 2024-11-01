@@ -1,0 +1,89 @@
+/* Copy Shortcode */
+.duplicate-copy-shortcode {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.duplicate-copy-shortcode input {
+	margin: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	flex-grow: 1;
+	width: calc(100% - 60px);
+}
+.duplicate-copy-shortcode span {
+	width: 100%;
+}
+.wp-core-ui .duplicate-copy-shortcode a.button-primary {
+	height: 30px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.column-shortcode .duplicate-copy-shortcode {
+    max-width: 300px;
+}
+
+tbody#the-list .no-items {
+	text-align: center;
+}
+
+@keyframes plwl-modal__fade-in-animation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes plwl-modal__appear-animation {
+	from {
+		margin-top: 32px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
+.plwl-modal__overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.35);
+	z-index: 100000;
+	animation: plwl-modal__fade-in-animation 0.2s ease-out 0s;
+	animation-fill-mode: forwards;
+}
+
+.plwl-modal__dismiss {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-flex;
+	justify-content: center;
+	height: 36px;
+	min-width: 36px;
+	margin: 8px;
+	padding: 6px;
+	border: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+	background: none;
+	transition: box-shadow 0.1s linear;
+	border-radius: 2px;
+}
+
+.plwl-modal__dismiss:focus {
+	box-shadow: 0 0 0 2px #007cba;
+	outline: 3px solid transparent;
+}
+
+.plwl-modal__dismiss:hover svg {
+	fill: #2271b1;
+}
